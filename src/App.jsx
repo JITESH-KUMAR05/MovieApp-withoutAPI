@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './pages/Home'
 import data from './data'
-
+import { Link , Route , Routes } from 'react-router-dom'
 
 
 function App() {
@@ -21,8 +21,19 @@ function App() {
     }
     </div>
     
+
+
+
+<Routes>
+  <Route path='/' element={<Home />} />
+  <Route path='/details' element={<Details />} />
+  <Route path='*' element={<NotFound />} />
+
+
+</Routes>
+
     </>
   )
 }
 
-export default App;
+export default App; 

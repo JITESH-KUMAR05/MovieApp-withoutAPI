@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './pages/Home'
 import data from './data'
+import Details from './pages/Details'
+import NotFound from './pages/NotFound'
 import { Link , Route , Routes } from 'react-router-dom'
 
 
@@ -12,14 +14,7 @@ function App() {
 
   return (
     <>
-    <h1 className=' text-center text-[2rem] font-bold p-5 '>JK KA Cinema Hall</h1>
-    <div className='flex w-[90vw] m-auto flex-wrap p-4 items-center justify-between gap-4'>
-    {
-      data.map((movie)=>{
-        return <Home title={movie.name} desc={movie.plot} image = {movie.poster} />
-      })
-    }
-    </div>
+    {/* <Home /> */}
     
 
 

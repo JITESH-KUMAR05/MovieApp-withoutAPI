@@ -5,7 +5,7 @@ import Home from "../pages/Home";
 function Thumbnail(data) {
     let navigate = useNavigate();
     function moviedetailsHandler(){
-        navigate(`/details/${data.Id}`)
+        navigate(`/details/${data.slug}`)
     }
     
   return (

@@ -7,7 +7,7 @@ function Home() {
     <div className='flex w-[90vw] m-auto flex-wrap p-4 items-center justify-between gap-4'>
     {
       data.map((movie)=>{
-        return <Thumbnail title={movie.name} desc={movie.plot} image = {movie.poster} />
+        return <Thumbnail title={movie.name} Id={movie.id} desc={movie.plot} image = {movie.poster} />
       })
     }
     </div>

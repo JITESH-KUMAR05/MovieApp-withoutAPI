@@ -55,8 +55,8 @@ function Details() {
                     <ReactPlayer
                     ref={playerRef}
                         width={"100%"}
-                        height={"80vh"}
-                        className=" scale-150  object-cover    "
+                        height={"50rem"}
+                        className=" scale-[1.3]  object-cover    "
                         playing
                         muted
                         url={movieDetails.youtube_trailer}
